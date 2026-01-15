@@ -9,3 +9,13 @@ handle_twitter.each do |i|
   end
 end
 puts "Shortest handle is #{first_handle}"
+
+count = 0
+handle_twitter.each do |i|
+  string = i[1..] #class range from index start to end of the str (endless range)
+  length = string.length #evaluate length
+  if length == 5 #condition we want only 5 char str
+    count +=1
+  end
+end
+puts "There is #{count} handles with 5 characters (without @)"
