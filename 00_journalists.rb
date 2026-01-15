@@ -22,7 +22,18 @@ def count_handles(handles)
       count +=1
     end
   end
-  puts "There is #{count} handles with 5 characters (without @)"
+  puts "There are #{count} handles with 5 characters (without @)"
+end
+
+def count_capital(handles)
+  count = 0
+  handles.each do |i|
+    first_char = i[1] #starts at index 1
+    if first_char =~ /[A-Z]/ #stricly checks if capital letter, using "pattern/regex match operator"
+      count +=1
+    end
+  end
+  puts "There are #{count} handles starting with a capital letter"
 end
 
 def perform
@@ -31,6 +42,7 @@ def perform
   total_handles(handle_twitter) #then method is giving acces to array
   shortest_handle(handle_twitter)
   count_handles(handle_twitter)
+  count_capital(handle_twitter)
 end
 
 perform
