@@ -64,15 +64,15 @@ def group_handle_by_length(handles)
   number_of_handles = {} #hash var
   handles.each do |i|
     handle = i[1..].length
-    if number_of_handles[handle]
-      number_of_handles[handle] += 1
+    if number_of_handles[handle] #access handle 
+      number_of_handles[handle] += 1 #add to hash if handle length already exists in it
     else
-      number_of_handles[handle] = 1
+      number_of_handles[handle] = 1 #create a new key if doesnt exists
     end
   end
   puts "-------------------------------------------------"
   puts "There are :"
-  number_of_handles.each do |length, count|
+  number_of_handles.sort.each do |length, count| #.sort by default in ascending order 
     puts "#{count} handles with #{length} characters length"
   end 
   #puts number_of_handles
