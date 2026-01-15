@@ -44,7 +44,20 @@ def sorted_handles(handles)
 end
 
 def sorted_size(handles)
-  
+  size = handles.sort_by {|handle| handle[1..].length}
+  puts "Here is the list of handles by size order (smaller to biggest) :"
+  size.each { |handle| puts handle}
+end
+
+def find_handle (handles)
+  position = handles.index("@epenser") #method .index to check if (value)
+  if position #if True
+    puts "-----------------------------------"
+    puts "@epenser is at position #{position} in array"
+  else
+    puts "-----------------------------------"
+    puts "@epenser is not found"
+  end
 end
 
 def perform
@@ -55,6 +68,8 @@ def perform
   count_handles(handle_twitter)
   count_capital(handle_twitter)
   sorted_handles(handle_twitter)
+  sorted_size(handle_twitter)
+  find_handle(handle_twitter)
 end
 
 perform
