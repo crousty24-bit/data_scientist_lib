@@ -2,7 +2,7 @@
 
 A collection of Ruby exercises focused on data analysis and manipulation techniques. This project demonstrates fundamental programming concepts applied to real-world datasets, including Twitter handles analysis and cryptocurrency market data.
 
-## 📋 Project Overview
+## Project Overview
 
 This project is part of the **The Hacking Project (THP)** curriculum (Course 3) and provides hands-on experience with:
 - Array manipulation and iteration
@@ -11,7 +11,7 @@ This project is part of the **The Hacking Project (THP)** curriculum (Course 3) 
 - Data filtering and sorting
 - Statistical analysis
 
-## 📁 Project Structure
+## Project Structure
 
 ### `00_journalists.rb`
 Analysis of Twitter handles from French journalists and media personalities.
@@ -44,7 +44,7 @@ Market analysis of cryptocurrency prices and valuations.
 - Real market price data
 - Demonstrates floating-point number handling
 
-## 🛠️ Technologies & Concepts
+## Technologies & Concepts
 
 **Language:** Ruby 2.5+
 
@@ -56,7 +56,7 @@ Market analysis of cryptocurrency prices and valuations.
 - **Data Transformation:** `.zip()`, `.to_h`, `.sort()`
 - **Functional Methods:** Blocks and lambda-style operations
 
-## 🚀 How to Run
+## How to Run
 
 ### Prerequisites
 - Ruby 2.5 or higher installed
@@ -75,7 +75,7 @@ Run both:
 ruby 00_journalists.rb && ruby 01_cryptocurrencies.rb
 ```
 
-## 📊 Expected Output Examples
+## Expected Output Examples
 
 ### Journalists Analysis
 ```
@@ -92,7 +92,7 @@ Most expensive crypto: [Name] is [Price]
 Cheapest crypto: [Name] is [Price]
 ```
 
-## 💡 Learning Outcomes
+## Learning Outcomes
 
 After completing these exercises, you'll understand:
 - How to manipulate and analyze large datasets efficiently
@@ -100,7 +100,7 @@ After completing these exercises, you'll understand:
 - How to use built-in methods effectively
 - Problem-solving approaches for data analysis tasks
 
-## 📝 Code Highlights
+## Code Highlights
 
 **Pattern Matching Example:**
 ```ruby
@@ -119,10 +119,10 @@ crypto_hash = crypto_names.zip(crypto_prices.map(&:to_f)).to_h
 sorted = handles.sort_by {|handle| handle[1..]}
 ```
 
-## 👨‍💻 Author
+## Author
 Developed as part of The Hacking Project curriculum
 
-## 📚 Resources
+## Resources
 - [Ruby Documentation](https://ruby-doc.org/)
 - [The Hacking Project](https://www.thehackingproject.org/)
 - Ruby Array Methods
