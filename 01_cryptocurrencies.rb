@@ -25,6 +25,8 @@ def cryptos_bellow_6k(crypto_data)
   crypto_data_updated.each do |name, price|
     puts "#{name} : #{price}"
   end
+  most_expensive = crypto_data_updated.max_by {|_, price| price} #find most expensive w/ max_by
+  puts "The most expensive crypto bellow 6K is : #{most_expensive[0]} : #{most_expensive[1]}" #show index 0 name & index 1 price
 end
 
 def perform
