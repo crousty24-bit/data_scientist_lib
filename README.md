@@ -4,12 +4,14 @@ A collection of Ruby exercises focused on data analysis and manipulation techniq
 
 ## Project Overview
 
-This project is part of the **The Hacking Project (THP)** curriculum (Course 3) and provides hands-on experience with:
+This project is part of the **The Hacking Project (THP)** curriculum (Course 3) and is **fully completed** according to course assignments. It provides hands-on experience with:
 - Array manipulation and iteration
 - Hash data structures
 - String processing and pattern matching
 - Data filtering and sorting
 - Statistical analysis
+
+**Status:** Complete and fully functional
 
 ## Project Structure
 
@@ -118,6 +120,14 @@ crypto_hash = crypto_names.zip(crypto_prices.map(&:to_f)).to_h
 ```ruby
 sorted = handles.sort_by {|handle| handle[1..]}
 ```
+
+## Future Enhancements
+
+A menu-driven interface is planned for future versions that will allow users to:
+- Select which analysis operations to run from the 00_journalists.rb module
+- Choose which cryptocurrency queries to execute from the 01_cryptocurrencies.rb module
+- Interactive prompt system to guide users through available options
+- Dynamic output based on user selections
 
 ## Author
 Developed as part of The Hacking Project curriculum
